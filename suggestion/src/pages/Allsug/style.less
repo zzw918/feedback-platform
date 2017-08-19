@@ -1,0 +1,132 @@
+@contentPadding: 20px;
+@inputPadding: 5px;
+@borderColor: #ccc;
+@fontColor: #666;
+div.all-sug-wrap {
+   .heading {
+        background: black;
+        height: 50px;
+        line-height: 50px;
+        div {
+            color: white;
+            font-size: 20px;
+        }
+        div.title {
+            padding-left: 10px;
+            a {
+                color: white;
+            }
+        }
+        div.my {
+            font-size: 15px;
+            text-align: right;
+            padding-right: 10px;
+            cursor: pointer;
+            a {
+                color: white;
+            }
+        }
+    }
+    div.main-title {
+        width: 85%;
+        margin: 30px auto;
+        div.putforward {
+            height: 45px;
+            line-height: 45px;
+            font-size: 16px;
+            color: @fontColor;
+            border-bottom: thin solid #ccc;
+        }
+         div.product-content {
+            margin-top: 20px;
+            div.spe {
+                border: thin solid #ccc;
+                padding: 10px;
+                div.lists {
+                    div.list {
+                        position: relative;
+                        background: #F5F5F5;
+                        padding: 5px;
+                        padding-left: 20px;
+                        margin: 10px 0;
+                        div.status {
+                            position: absolute;
+                            padding: 5px;
+                            top: 0px;
+                            right: 0px;
+                            color: white;
+                        }
+                        div.submit {
+                            background: lightyellow;
+                            color: black;
+                        }
+                        div.pass {
+                            background: lightgreen;
+                        }
+                        div.receive {
+                            background: lightblue;
+                        }
+                        div.complete {
+                            background: green;
+                        }
+                        h2.sug-title {
+                            color: blue;
+                        }
+                        div.sug-info {
+                            margin-top: 15px;
+                            span {
+                                padding-right: 12px;
+                            }
+                        }
+                        div.sug-detail {
+                            padding: 20px 0;
+                            font-size: 18px;
+                            p {
+                                width: 100%;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-line-clamp:2; 
+                                -webkit-box-orient:vertical;
+                                text-align: justify; 
+                                text-indent: 2em;
+                            }
+                        }
+                        div.tag {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            div.recom {
+                background-color: #F9F9F9;
+                padding: 20px;
+                h3 {
+                    color: #666;
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
+                ul {
+                    padding-left: 16px;
+                    li {
+                        list-style: square;
+                        font-size: 14px;
+                        color: #666;
+                        margin-bottom: 15px;
+                        p:nth-child(2) {
+                            color: #888;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.footer-wrap {
+        background: black;
+        color: white;
+        div {
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "types": ["node"],
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "lib": [
+      "scripthost",
+      "dom",
+      "es6"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true
+  },
+  "exclude": [
+        "node_modules",
+        "www"
+    ],
+  "include": [
+    "src"
+  ]
+}

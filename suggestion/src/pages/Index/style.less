@@ -1,0 +1,129 @@
+@contentPadding: 20px;
+@inputPadding: 5px;
+@borderColor: #ccc;
+@fontColor: #666;
+div.index-wrap {
+    .heading {
+        background: black;
+        height: 50px;
+        line-height: 50px;
+        div {
+            color: white;
+            font-size: 20px;
+        }
+        div.title {
+            padding-left: 10px;
+            a {
+                color: white;
+            }
+        }
+        div.my {
+            font-size: 15px;
+            text-align: right;
+            padding-right: 10px;
+            cursor: pointer;
+            a {
+                color: white;
+            }
+        }
+    }
+    div.main-title {
+        width: 85%;
+        margin: 30px auto;
+        div.putforward {
+            padding-left: 35px;
+            height: 45px;
+            line-height: 45px;
+            font-size: 16px;
+            color: @fontColor;
+            border-bottom: thin solid #ccc;
+            background: url('/images/suggestion.png') no-repeat 0 50%;
+            background-size: 25px 25px;
+        }
+    }
+    div.main-content {
+        width: 85%;
+        margin: 50px auto;
+        padding: 20px;
+        height: 700px;
+        border: thin solid @borderColor;
+        box-shadow: 0 0 15px rgba(80, 80, 80, 0.3);
+        div.choose-type {
+            margin: 30px 0;
+            .submit-suggestion {
+                margin-top: 20px;
+            }
+            div.label-wrap {
+                text-align: right;   
+                padding-right: 10px;   
+                font-size: 14px;          
+            }
+            div.content-wrap {
+                
+                /*个性化： 类型选择 */
+                div.item-wrap {
+                    border: thin solid @borderColor;
+                    height: 35px;
+                    line-height: 35px;
+                    cursor: pointer;
+                    text-align: center;
+                    color: #666;
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 16px;
+                        text-decoration: none;
+                        &:hover {
+                            color: blue;
+                        }
+                        &:visited {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                /* 个性化：标题输入 */
+                input.question-title {
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    outline: none;
+                    padding-left: @inputPadding;
+                    font-size: 16px;
+                    border: none;
+                    border: thin solid @borderColor;
+                    transition: all 0.5s;
+                    &:focus {
+                        box-shadow: 0 0 2px blue;
+                    }
+                } 
+
+                /* 个性化： div实现textarea */ 
+                div.editable-content {
+                    font-size: 16px;
+                    border: thin solid @borderColor;
+                    outline: none;
+                    min-height: 200px;
+                    max-height: 400px;
+                    color: @fontColor;
+                    overflow-y: auto;
+                    padding: @inputPadding;
+                    transition: all 0.5s;
+                    &:focus {
+                        box-shadow: 0 0 2px blue;
+                    }
+                }
+            }
+        }
+    }
+    div.footer {
+        background: black;
+        color: white;
+        div {
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+    }
+} 

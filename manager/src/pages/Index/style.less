@@ -1,0 +1,75 @@
+@contentPadding: 20px;
+@inputPadding: 5px;
+@borderColor: #ccc;
+@fontColor: #666;
+@blueColor: #108EE9;
+div.index-wrap {
+    .heading {
+        background: black;
+        height: 50px;
+        line-height: 50px;
+        div {
+            color: white;
+            font-size: 20px;
+        }
+        div.title {
+            padding-left: 10px;
+        }
+        div.my {
+            font-size: 15px;
+            text-align: right;
+            padding-right: 10px;
+            cursor: pointer;
+        }
+    }
+    .content-wrap {
+        div.content-product,
+        div.content-info {
+            min-height: 540px;
+        }
+        div.content-product {
+            padding: 0;
+            div.product {
+                h2 {
+                    padding-left: 10px;
+                    margin: 15px 0;
+                    color: @blueColor;
+
+                }
+            }
+        }
+        div.content-info {
+            padding: 16px 60px;
+            div.product-tab {
+                div.product-name {
+                    margin-bottom: 25px;
+                    span.spe-name {
+                        font-size: 18px;
+                        color: @blueColor;
+                        font-style: italic;
+                    }
+                    span.attention {
+                        cursor: pointer;
+                        &:hover {
+                            color: @blueColor;
+                        }
+                    }
+                }
+            }
+            div.tab-content {
+                margin-top: 30px;   
+            }
+        }
+    }
+    
+    div.footer {
+        background: black;
+        color: white;
+        div {
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+    }
+    
+} 
